@@ -1,8 +1,9 @@
 
 const paragraphGenerator = () => {
     let paragraphs = '';
+    const paragraphLimit = 50;
 
-    for (let i = 1; i < 50; i++) {
+    for (let i = 1; i <= paragraphLimit; i++) {
         paragraphs += '<p>'+i+' Soy ';
         if (i % 2 === 0) paragraphs += 'Par!</p>';
         else paragraphs += 'Impar!</p>';
